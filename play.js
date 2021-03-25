@@ -15,7 +15,7 @@ function play() {
 
 
     var count = 0;
-    console.log('level ' + level);
+    
     var interval = setInterval(() => {
         level_area.innerHTML="Level   "+level;
         var x = Math.floor(Math.random() * 10) + min;
@@ -38,7 +38,7 @@ function play() {
         if (count == rounds) {
             setTimeout(() => {
                 area.innerHTML = "";
-                console.log(result);
+            
                 clearInterval(interval);
                 submit.removeAttribute('disabled');
             }, 1000);
